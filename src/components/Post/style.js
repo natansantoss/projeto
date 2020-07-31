@@ -14,7 +14,7 @@ export const PostStyled = styled.div `
 
     width: 200px;
 
-    padding: 10px 15px;
+    padding: 10px 8px;
 
     a:hover{
 

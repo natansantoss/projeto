@@ -12,8 +12,8 @@ function View1(){
     return(
         <>
             <Header />
-            <Footer />
             <Post />
+            <Footer />
         </>
     );
 };
