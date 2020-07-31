@@ -1,13 +1,11 @@
 import React from 'react';
 
-import Header from './components/Header'
-import Footer from './components/Footer'
+import View1 from './pages/View1'
 
 function App() {
   return (
     <>
-      <Header />
-      <Footer />
+      <View1 />
     </>
   );
 }
