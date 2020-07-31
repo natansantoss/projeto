@@ -1,12 +1,18 @@
 import React from 'react';
 
 import {
-    A,
+    HeaderStyled,
+    Container,
+    ButtonStyled,
 } from './style.js'
 
 function Header(){
     return(
-        <A>Hello World!</A>
+        <HeaderStyled>
+            <Container>
+                <ButtonStyled href="/">Ir Para Posts</ButtonStyled>
+            </Container>
+        </HeaderStyled>
     );
 };
 

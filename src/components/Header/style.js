@@ -1,6 +1,45 @@
-import styled from 'styled-components';
+import styled, {  keyframes  } from 'styled-components';
 
-export const A = styled.h1 `
+const fade = keyframes `
+    from {
+        transform: scale(1)
+    }to {
+        transform: scale(1.1)
+    }
+`
 
-    color: red;
+export const HeaderStyled = styled.div`
+
+    background: #22242b;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const Container = styled.div`
+
+    width: 100%;
+    max-width: 1000px;
+
+    a:hover{
+        text-decoration: underline;
+        animation: ${fade} 0.4s forwards; 
+    }
+`
+
+export const ButtonStyled = styled.a`
+
+    float: right;
+
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 1.0rem;
+    font-weight: 400;
+    text-shadow: #000 0 0 7px;
+    text-decoration: none;    
+
 `
