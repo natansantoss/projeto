@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route exact path="/" component={View1} />
-      <Route path="/post" component={View2} />
+      <Route path="/post/:id" component={View2} />
     </BrowserRouter>
   );
 }

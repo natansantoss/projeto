@@ -1,12 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-const fade = keyframes `
-    from {
-        transform: scale(1)
-    }to {
-        transform: scale(1.1)
-    }
-`
+import styled from 'styled-components';
 
 export const PostStyled = styled.li `
 
@@ -17,8 +9,7 @@ export const PostStyled = styled.li `
     padding: 10px 8px;
 
     a:hover{
-
-        animation: ${fade} 0.3s forwards;
+        text-decoration: underline;;
     }
 `
 export const UserIdStyled = styled.h1 `

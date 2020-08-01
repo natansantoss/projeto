@@ -31,7 +31,7 @@ function Post(){
                     <PostStyled key={post.id}>
                         <UserIdStyled>Usuario: {post.userId}</UserIdStyled>
                         <PostIdStyled>Número do Post: {post.id}</PostIdStyled>
-                        <DetailPostStyled to="/post" as={Link}>Ver Detalhes Do Post</DetailPostStyled>
+                        <DetailPostStyled to={`/post/${post.id}`} as={Link}>Ver Detalhes Do Post</DetailPostStyled>
                     </PostStyled>
                 );
             })};
