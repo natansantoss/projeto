@@ -11,7 +11,7 @@ export const FooterStyled = styled.div`
     justify-content: center;
 
     margin-top: 20px;
-
+    
     a:hover{
         text-decoration: underline;
     }

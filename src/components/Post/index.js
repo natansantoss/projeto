@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {  Link  } from 'react-router-dom';
 
 import {
     PostStyled,
@@ -30,7 +31,7 @@ function Post(){
                     <PostStyled key={post.id}>
                         <UserIdStyled>Usuario: {post.userId}</UserIdStyled>
                         <PostIdStyled>Número do Post: {post.id}</PostIdStyled>
-                        <DetailPostStyled href="#">Ver Detalhes Do Post</DetailPostStyled>
+                        <DetailPostStyled to="/post" as={Link}>Ver Detalhes Do Post</DetailPostStyled>
                     </PostStyled>
                 );
             })};

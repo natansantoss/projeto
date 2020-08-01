@@ -1,4 +1,5 @@
 import React from 'react';
+import {  Link  } from 'react-router-dom'
 
 import {
     HeaderStyled,
@@ -10,7 +11,7 @@ function Header(){
     return(
         <HeaderStyled>
             <Container>
-                <ButtonStyled href="/">Ir Para Posts</ButtonStyled>
+                <ButtonStyled to="/" as={Link}>Ir Para Posts</ButtonStyled>
             </Container>
         </HeaderStyled>
     );

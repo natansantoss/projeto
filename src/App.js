@@ -8,8 +8,8 @@ import View2 from './pages/View2'
 function App() {
   return (
     <BrowserRouter>
-      <Route exact path="/" exact component={View1} />
-      <Route path="/post/:id" component={View2} />
+      <Route exact path="/" component={View1} />
+      <Route path="/post" component={View2} />
     </BrowserRouter>
   );
 }

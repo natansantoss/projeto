@@ -1,32 +1,67 @@
 import styled from 'styled-components';
 
-export const FooterStyled = styled.div`
+export const PagePostStyle = styled.div`
 
-    background: #22242b;
-
-    height: 60px;
-
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-top: 20px;
+` 
+export const Container = styled.div`
 
-    a:hover{
-        text-decoration: underline;
-    }
+    width: 100%;
+    max-width: 1050px;
+    height: 500px;
 
-`
-export const AuthorStyled = styled.a`
+    padding: 20px;
+    margin: 0px 20px;
+    
+    display: flex;
+    flex-direction: column;
 
-    float: right;
+    position: relative;
 
-    cursor: pointer;
+    background: #22242b;
+    border-radius: 15px;
+` 
+export const TitlePostStyle = styled.h1`
 
+    font-size: 2.9rem;
+    font-weight: 900;
+    text-shadow: #000 0 0 7px;
     color: #fff;
-    font-size: 1.2rem;
+` 
+export const ContentpostStyle = styled.h2`
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: #000 0 0 7px;
+    color: #fff;
+
+    margin: 25px 0px;
+`
+export const InfoPostStyled = styled.div`
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.3rem;
     font-weight: 500;
     text-shadow: #000 0 0 7px;
-    text-decoration: none;    
+    color: #fff;
+    text-decoration: underline;
+`
+export const UserStyled = styled.h3`
 
+    position: absolute;
+    bottom: 0;
+    margin: 25px;
+    left: 0;
+`
+export const IdPostStyled = styled.h3`
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 25px;
 `
