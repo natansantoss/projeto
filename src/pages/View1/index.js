@@ -5,14 +5,24 @@ import Footer from '../../components/Footer'
 import Post from '../../components/Post'
 
 import {
-
+    AllPostsStyled,
+    Container,
+    PageStyled,
 } from './style.js' 
 
 function View1(){
     return(
         <>
             <Header />
-            <Post />
+            <Container>
+
+                <PageStyled>
+                    <AllPostsStyled>
+                        <Post />
+                    </AllPostsStyled>
+                </PageStyled>
+           
+            </Container>
             <Footer />
         </>
     );

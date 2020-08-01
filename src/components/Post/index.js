@@ -27,7 +27,7 @@ function Post(){
             {posts.map((post) => {
 
                 return(
-                    <PostStyled>
+                    <PostStyled key={post.id}>
                         <UserIdStyled>Usuario: {post.userId}</UserIdStyled>
                         <PostIdStyled>Número do Post: {post.id}</PostIdStyled>
                         <DetailPostStyled href="#">Ver Detalhes Do Post</DetailPostStyled>

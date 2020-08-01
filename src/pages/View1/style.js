@@ -1,30 +1,27 @@
 import styled from 'styled-components';
 
-export const FooterStyled = styled.div`
+export const Container = styled.div`
 
-    background: #22242b;
-
-    height: 60px;
-
-    display: flex; 
-    align-items: center;
+    display: flex;
     justify-content: center;
 
-    a:hover{
-        text-decoration: underline;
-    }
-
 `
-export const AuthorStyled = styled.a`
 
-    float: right;
+export const PageStyled = styled.div`
 
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
 
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-shadow: #000 0 0 7px;
-    text-decoration: none;    
+export const AllPostsStyled = styled.ul`
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    li{
+        list-style: none;
+    }
 
 `

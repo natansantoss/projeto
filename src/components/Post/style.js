@@ -8,7 +8,7 @@ const fade = keyframes `
     }
 `
 
-export const PostStyled = styled.div `
+export const PostStyled = styled.li `
 
     background: #1e1f25;
 
